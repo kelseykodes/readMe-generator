@@ -7,7 +7,7 @@ const markdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [{
     type: 'input',
-    message: 'What is the title of your porject?',
+    message: 'What is the title of your project?',
     name: 'title',
   },
   {
