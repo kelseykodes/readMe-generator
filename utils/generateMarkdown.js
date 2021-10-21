@@ -27,6 +27,8 @@ function generateMarkdown(data) {
   ${data.license} 
 # Questions:
  <a href="https://github.com/${data.github}>SomeLink</a>
+#Email me: 
+${data.email}
 `;
 }
 
