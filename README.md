@@ -1,17 +1,16 @@
 # Your ReadMe:
 # Project Title: 
-  jf 
+  gymder 
 # Description: 
-  ff
+  cool app
 # Installation:
-  fe 
+  no installation 
 # Usage:
-  w 
+  use it for working out 
 # Contributing:
-  d 
+  me and team 
 # License:
-  APACHE 2.0 
+  GPL 3.0 
 # Questions:
- <a href="https://github.com/f>SomeLink</a>
-#Email me: 
-kperkins@yahoo.com
+[kperkins97](https://github.com/kperkins97 
+  kelsey@yahoo.com 

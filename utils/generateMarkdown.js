@@ -26,13 +26,11 @@ function generateMarkdown(data) {
 # License:
   ${data.license} 
 # Questions:
- <a href="https://github.com/${data.github}>SomeLink</a>
-#Email me: 
-${data.email}
+[${data.github}](https://github.com/${data.github} 
+  ${data.email} 
 `;
 }
 
 module.exports = generateMarkdown;
 
 
-// Description, Installation, Usage, Contributing, and Tests
