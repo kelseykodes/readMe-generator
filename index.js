@@ -1,64 +1,58 @@
+// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
+const markdown = require('./utils/generateMarkdown')
 
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      message: 'What is the title of your porject?',
-      name: 'title',
-    },
-    {
-      type: 'input',
-      message: 'What is the description of your project?',
-      name: 'description',
-    },
-    {
-      type: 'input',
-      message: 'What are your installation instructions?',
-      name: 'installation',
-    },
-    {
+// TODO: Create an array of questions for user input
+const questions = [{
     type: 'input',
-      message: 'Explain the usage of your app:',
-      name: 'usage',
-    },
-    {
+    message: 'What is the title of your porject?',
+    name: 'title',
+  },
+  {
     type: 'input',
-      message: 'Please list any contributors:',
-      name: 'contributors',
-    },
-    {
-        type: 'input',
-          message: 'Select a license:',
-          name: 'license',
-    },
-    {
-        type: 'input',
-          message: 'What is your github username?',
-          name: 'github',
-    },
-  ])
-//   .then((answers => {
-  const generateHTML = ({title, description, installation, usage, contributors, license, github}) => (
-      `<!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Your ReadME</title>
-      </head>
-      <body>
-          <header>ReadME</header>
-          <h1>${title}</h1>
-          <h3>${description}<h3>
-          <h3>${installation}</h3>
-          <h2>${usage}</h2>
-          <h2>${contributors}</h2>
-          <h2${license}</h2>
-          <h3><a href="https://github.com/${github}"></a></h3>
-      
-      </body>
-      </html>`
-  );
+    message: 'What is the description of your project?',
+    name: 'description',
+  },
+  {
+    type: 'input',
+    message: 'What are your installation instructions?',
+    name: 'installation',
+  },
+  {
+  type: 'input',
+    message: 'Explain the usage of your app:',
+    name: 'usage',
+  },
+  {
+  type: 'input',
+    message: 'Please list any contributors:',
+    name: 'contributors',
+  },
+  {
+      type: 'list',
+        message: 'Select a license:',
+        name: 'license',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+  },
+  {
+      type: 'input',
+        message: 'What is your github username?',
+        name: 'github',
+  }];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+  return fs.writeFileSync (path.join(process.cwd(),fileName),data);
+}
+
+// TODO: Create a function to initialize app
+function init() {
+  inquirer.prompt(questions).then((responses)=>{
+    writeToFile('readme.md', markdown({...responses}))
+  })
+}
+
+// Function call to initialize app
+init();
