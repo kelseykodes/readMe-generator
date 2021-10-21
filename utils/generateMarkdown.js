@@ -26,11 +26,11 @@ function generateMarkdown(data) {
 # License:
   ${data.license} 
 # Questions:
-[My Github:](https://github.com/${data.github}) 
-  ${data.email} 
+Click here for my Github:(https://github.com/${data.github}) 
+# Email Me:
+  Shoot me an email!: ${data.email} 
 `;
 }
-
 module.exports = generateMarkdown;
 
 

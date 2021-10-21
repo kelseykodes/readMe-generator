@@ -2,15 +2,20 @@
 # Project Title: 
   kp 
 # Description: 
-  no
+  kp
 # Installation:
-  yes 
+  kp 
 # Usage:
-  no 
+  kp 
 # Contributing:
-  no 
+  kp 
 # License:
-  APACHE 2.0 
+  BSD 3 
 # Questions:
-[My Github:](https://github.com/kperkins97) 
-  kelsey@yahoo.com 
+Click here for my Github:(https://github.com/leci1259) 
+# Email Me:
+  Shoot me an email!: kelsey@yahoo.com 
+
+
+
+
