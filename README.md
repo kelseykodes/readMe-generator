@@ -1,7 +1,7 @@
 
-# Project Title: kl 
+# Project Title: Gymder 
 
-  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Table of Contents
   - [Installation](#installation)
@@ -11,16 +11,16 @@
   - [Questions](#questions)
 
 # Description: 
-  k
+  find the best gyms in Atlanta, Ga!!
 ## Installation:
-  le 
+  no installation required! 
 ## Usage:
-  mf 
+  open it and have fun. 
 ## Contributing:
-  fdf 
+  me 
 # License:
- The repo is licensed by: APACHE 2.0 
+ The repo is licensed by: MIT 
 # Questions:
-Click here for my Github: https://github.com/ks
+Click here for my Github: https://github.com/kperkins97
 # Email Me:
-  Shoot me an email!: kd 
+  Shoot me an email!: kelseykodes@yahoo.com 
