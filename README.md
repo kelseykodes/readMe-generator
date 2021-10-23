@@ -1,5 +1,5 @@
 
-# Project Title: Gymder 
+# Project Title: The App of Fun 
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -11,11 +11,11 @@
   - [Questions](#questions)
 
 # Description: 
-  find the best gyms in Atlanta, Ga!!
+  having fun on an app!
 ## Installation:
-  no installation required! 
+  no installation required. 
 ## Usage:
-  open it and have fun. 
+  have fun on an app(: 
 ## Contributing:
   me 
 # License:
