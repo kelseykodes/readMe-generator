@@ -34,7 +34,7 @@ const questions = [{
       type: 'list',
         message: 'Select a license:',
         name: 'license',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+        choices: ['MIT', 'APACHE 2.0', 'BSD 3', 'None']
   },
   {
       type: 'input',
@@ -49,13 +49,14 @@ const questions = [{
   }];
 
 // TODO: Create a function to write README file
+
 function writeToFile(fileName, data) {
   return fs.writeFileSync (path.join(process.cwd(),fileName),data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((responses)=>{
+  inquirer.prompt(questions).then((responses)=> {
     writeToFile('readme.md', markdown({...responses}))
   })
 }
